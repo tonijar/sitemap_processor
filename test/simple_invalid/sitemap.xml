@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset_ko xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url_ko>
+        <loc_ko>http://www.example.com/</loc_ko>
+        <lastmod_ko>2005-01-01</lastmod_ko>
+        <changefreq_ko>monthly</changefreq_ko>
+        <priority_ko>0.8</priority_ko>
+    </url_ko>
+    <url_ko>
+        <loc_ko>http://www.example2.com/</loc_ko>
+        <lastmod_ko>2005-01-02</lastmod_ko>
+        <changefreq_ko>weekly</changefreq_ko>
+        <priority_ko>0.9</priority_ko>
+    </url_ko>
+</urlset_ko>

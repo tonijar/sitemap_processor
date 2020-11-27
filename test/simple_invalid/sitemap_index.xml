@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex_ko xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <sitemap_ko>
+        <loc_ko>http://www.example.com/sitemap1.xml.gz</loc_ko>
+        <lastmod_ko>2004-10-01T18:23:17+00:00</lastmod_ko>
+    </sitemap_ko>
+    <sitemap_ko>
+        <loc_ko>http://www.example.com/sitemap2.xml.gz</loc_ko>
+        <lastmod_ko>2005-01-01</lastmod_ko>
+    </sitemap_ko>
+</sitemapindex_ko>

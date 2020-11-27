@@ -2,6 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'sitemap.g.dart';
 
+/// Sitemap representation
 @JsonSerializable(explicitToJson: true)
 class Sitemap {
   final SitemapUrlSet urlset;

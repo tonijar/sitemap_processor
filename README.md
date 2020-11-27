@@ -1,6 +1,6 @@
 # sitemap_processor
 
-Sitemap processor package.
+A sitemap and sitemap index processor package.
 
 ## Getting Started
 
@@ -12,3 +12,7 @@ multiple Flutter or Dart projects.
 For help getting started with Flutter, view our 
 [online documentation](https://flutter.dev/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
+
+## More info
+* Sitemap and sitemap index protocol: https://www.sitemaps.org/protocol.html
+* JSON serialization: https://flutter.dev/docs/development/data-and-backend/json
