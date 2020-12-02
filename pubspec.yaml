@@ -1,7 +1,6 @@
 name: sitemap_processor
 description: Sitemap processor package.
 version: 0.0.1
-author:
 homepage:
 
 environment:
