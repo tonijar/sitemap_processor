@@ -1,19 +1,27 @@
 # sitemap_processor
 
-A sitemap and sitemap index processor package.
+A sitemap and sitemap index processor Dart package. Convert from XML to a easier to manipulate object.
 
-## Getting Started
+## Importing library
+```dart
+import 'package:sitemap_processor/sitemap_processor.dart';
+```
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+## Process a sitemap index
+```dart
+final SitemapProcessor processor = SitemapProcessor();
+SitemapIndex sitemapIndex = processor.process(sitemapIndexXmlString);
+print(sitemapIndex.sitemapindex.sitemap[0].loc);
+```
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## Process a sitemap
+```dart
+final SitemapProcessor processor = SitemapProcessor();
+Sitemap sitemap = tested.process(sitemapXmlString);
+print(sitemap.urlset.url[0].loc);
+```
 
 ## More info
 * Sitemap and sitemap index protocol: https://www.sitemaps.org/protocol.html
 * Dart JSON serialization: https://flutter.dev/docs/development/data-and-backend/json
-* Format extensions: https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap#sitemapformat
+* Sitemap format extensions: https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap#sitemapformat
