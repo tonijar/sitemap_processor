@@ -1,6 +1,6 @@
 # sitemap_processor
 
-A sitemap and sitemap index processor Dart package. Convert from XML to a easier to manipulate object.
+A sitemap and sitemap index processor Dart package, converts from XML to an easier to manipulate object.
 
 ## Importing library
 ```dart
