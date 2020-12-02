@@ -9,7 +9,9 @@ class SitemapIndex {
 
   SitemapIndex(this.sitemapindex);
 
-  factory SitemapIndex.fromJson(Map<String, dynamic> json) => _$SitemapIndexFromJson(json);
+  factory SitemapIndex.fromJson(Map<String, dynamic> json) =>
+      _$SitemapIndexFromJson(json);
+
   Map<String, dynamic> toJson() => _$SitemapIndexToJson(this);
 }
 
@@ -19,7 +21,9 @@ class SitemapIndexList {
 
   SitemapIndexList(this.sitemap);
 
-  factory SitemapIndexList.fromJson(Map<String, dynamic> json) => _$SitemapIndexListFromJson(json);
+  factory SitemapIndexList.fromJson(Map<String, dynamic> json) =>
+      _$SitemapIndexListFromJson(json);
+
   Map<String, dynamic> toJson() => _$SitemapIndexListToJson(this);
 }
 
@@ -30,6 +34,8 @@ class SitemapIndexItem {
 
   SitemapIndexItem(this.loc, this.lastmod);
 
-  factory SitemapIndexItem.fromJson(Map<String, dynamic> json) => _$SitemapIndexItemFromJson(json);
+  factory SitemapIndexItem.fromJson(Map<String, dynamic> json) =>
+      _$SitemapIndexItemFromJson(json);
+
   Map<String, dynamic> toJson() => _$SitemapIndexItemToJson(this);
 }

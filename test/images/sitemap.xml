@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://example.com/sample.html</loc>
+        <image:image>
+            <image:loc>http://example.com/image.jpg</image:loc>
+            <image:title><![CDATA[image]]></image:title>
+            <image:caption><![CDATA[image]]></image:caption>
+            <image:geo_location>Barcelona, España</image:geo_location>
+            <image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
+        </image:image>
+        <image:image>
+            <image:loc>http://example.com/photo.jpg</image:loc>
+            <image:title><![CDATA[photo]]></image:title>
+            <image:caption><![CDATA[photo]]></image:caption>
+            <image:geo_location>Barcelona, España</image:geo_location>
+            <image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://example.com/sample2.html</loc>
+        <image:image>
+            <image:loc>http://example.com/image2.jpg</image:loc>
+            <image:title><![CDATA[image2]]></image:title>
+            <image:caption><![CDATA[image2]]></image:caption>
+            <image:geo_location>Barcelona, España</image:geo_location>
+            <image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
+        </image:image>
+        <image:image>
+            <image:loc>http://example.com/photo2.jpg</image:loc>
+            <image:title><![CDATA[photo2]]></image:title>
+            <image:caption><![CDATA[photo2]]></image:caption>
+            <image:geo_location>Barcelona, España</image:geo_location>
+            <image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
+        </image:image>
+    </url>
+</urlset>

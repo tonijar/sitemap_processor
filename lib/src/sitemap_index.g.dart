@@ -10,8 +10,7 @@ SitemapIndex _$SitemapIndexFromJson(Map<String, dynamic> json) {
   return SitemapIndex(
     json['sitemapindex'] == null
         ? null
-        : SitemapIndexList.fromJson(
-            json['sitemapindex'] as Map<String, dynamic>),
+        : SitemapIndexList.fromJson(json['sitemapindex']),
   );
 }
 

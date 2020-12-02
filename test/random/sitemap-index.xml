@@ -1,0 +1,14 @@
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <sitemap>
+        <loc>https://versioname.com/post-sitemap.xml</loc>
+        <lastmod>2020-10-05T20:27:39+00:00</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://versioname.com/page-sitemap.xml</loc>
+        <lastmod>2019-11-14T17:59:44+00:00</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://versioname.com/attachment-sitemap.xml</loc>
+        <lastmod>2020-10-04T19:38:06+00:00</lastmod>
+    </sitemap>
+</sitemapindex>

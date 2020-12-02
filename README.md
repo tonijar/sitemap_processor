@@ -15,4 +15,5 @@ samples, guidance on mobile development, and a full API reference.
 
 ## More info
 * Sitemap and sitemap index protocol: https://www.sitemaps.org/protocol.html
-* JSON serialization: https://flutter.dev/docs/development/data-and-backend/json
+* Dart JSON serialization: https://flutter.dev/docs/development/data-and-backend/json
+* Format extensions: https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap#sitemapformat

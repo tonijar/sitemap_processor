@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://www.example.org/economia/articulo55.html</loc>
+        <news:news>
+            <news:publication>
+                <news:name>Publicación de ejemplo 11</news:name>
+                <news:language>es</news:language>
+            </news:publication>
+            <news:publication_date>2008-12-23</news:publication_date>
+            <news:title>Empresas A y B en negociaciones de fusión 11</news:title>
+        </news:news>
+        <news:news>
+            <news:publication>
+                <news:name>Publicación de ejemplo 12</news:name>
+                <news:language>es</news:language>
+            </news:publication>
+            <news:publication_date>2008-12-23</news:publication_date>
+            <news:title>Empresas A y B en negociaciones de fusión 12</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>http://www.example.org/economia/articulo552.html</loc>
+        <news:news>
+            <news:publication>
+                <news:name>Publicación de ejemplo 21</news:name>
+                <news:language>es</news:language>
+            </news:publication>
+            <news:publication_date>2008-12-23</news:publication_date>
+            <news:title>Empresas A y B en negociaciones de fusión 21</news:title>
+        </news:news>
+        <news:news>
+            <news:publication>
+                <news:name>Publicación de ejemplo 22</news:name>
+                <news:language>es</news:language>
+            </news:publication>
+            <news:publication_date>2008-12-23</news:publication_date>
+            <news:title>Empresas A y B en negociaciones de fusión 22</news:title>
+        </news:news>
+    </url>
+</urlset>
