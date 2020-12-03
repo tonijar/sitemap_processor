@@ -27,6 +27,7 @@ class SitemapProcessor {
     }
   }
 
+  /// Process JSON and return sitemap object
   dynamic _processSitemap(json) {
     if (json['urlset']['url'] != null) {
       if (json['urlset']['url'] is Map<String, dynamic>) {
@@ -39,6 +40,7 @@ class SitemapProcessor {
     return Sitemap.fromJson(json);
   }
 
+  /// Build images, videos and news List  from Map
   dynamic _processSitemapUrl(List<dynamic> json) {
     json.forEach((element) {
       if (element['image'] != null &&
@@ -61,6 +63,7 @@ class SitemapProcessor {
     });
   }
 
+  /// Process JSON and return sitemap index object
   dynamic _processSitemapIndex(json) {
     if (json['sitemapindex']['sitemap'] != null &&
         json['sitemapindex']['sitemap'] is Map<String, dynamic>) {
@@ -71,6 +74,7 @@ class SitemapProcessor {
     return SitemapIndex.fromJson(json);
   }
 
+  /// Remove all unused namespaces from XML
   String _removeAllNamespaces(String xml) => xml.replaceAllMapped(
       new RegExp(r'"(\w*):(\w*)":', caseSensitive: false),
       (Match m) => '"${m[2]}":');

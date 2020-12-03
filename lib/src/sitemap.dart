@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'sitemap.g.dart';
 
-/// Sitemap representation
+/// Sitemap object
 @JsonSerializable(explicitToJson: true)
 class Sitemap {
   final SitemapUrlSet urlset;
@@ -15,6 +15,7 @@ class Sitemap {
   Map<String, dynamic> toJson() => _$SitemapToJson(this);
 }
 
+/// Sitemap URL set object
 @JsonSerializable(explicitToJson: true)
 class SitemapUrlSet {
   final List<SitemapUrl> url;
@@ -27,6 +28,7 @@ class SitemapUrlSet {
   Map<String, dynamic> toJson() => _$SitemapUrlSetToJson(this);
 }
 
+/// Sitemap URL object
 @JsonSerializable(explicitToJson: true)
 class SitemapUrl {
   final String loc;
@@ -46,16 +48,18 @@ class SitemapUrl {
   Map<String, dynamic> toJson() => _$SitemapUrlToJson(this);
 }
 
+/// Sitemap image object
 @JsonSerializable()
 class SitemapImage {
   final String loc;
   final String title;
   final String caption;
-  final String geo_location;
+  @JsonKey(name: "geo_location")
+  final String geoLocation;
   final String license;
 
   SitemapImage(
-      this.loc, this.title, this.caption, this.geo_location, this.license);
+      this.loc, this.title, this.caption, this.geoLocation, this.license);
 
   factory SitemapImage.fromJson(Map<String, dynamic> json) =>
       _$SitemapImageFromJson(json);
@@ -63,40 +67,49 @@ class SitemapImage {
   Map<String, dynamic> toJson() => _$SitemapImageToJson(this);
 }
 
+/// Sitemap video object
 @JsonSerializable()
 class SitemapVideo {
-  final String thumbnail_loc;
+  @JsonKey(name: "thumbnail_loc")
+  final String thumbnailLoc;
   final String title;
   final String description;
-  final String content_loc;
-  final String player_loc;
+  @JsonKey(name: "content_loc")
+  final String contentLoc;
+  @JsonKey(name: "content_loc")
+  final String playerLoc;
   final String duration;
-  final String expiration_date;
+  @JsonKey(name: "expiration_date")
+  final String expirationDate;
   final String rating;
-  final String view_count;
-  final String publication_date;
-  final String family_friendly;
+  @JsonKey(name: "view_count")
+  final String viewCount;
+  @JsonKey(name: "publication_date")
+  final String publicationDate;
+  @JsonKey(name: "family_friendly")
+  final String familyFriendly;
   final String restriction;
   final String price;
-  final String requires_subscription;
+  @JsonKey(name: "requires_subscription")
+  final String requiresSubscription;
   final String uploader;
   final String live;
 
   SitemapVideo(
-      this.thumbnail_loc,
+      this.thumbnailLoc,
       this.title,
       this.description,
-      this.content_loc,
-      this.player_loc,
+      this.contentLoc,
+      this.playerLoc,
       this.duration,
-      this.expiration_date,
+      this.expirationDate,
       this.rating,
-      this.view_count,
-      this.publication_date,
-      this.family_friendly,
+      this.viewCount,
+      this.publicationDate,
+      this.familyFriendly,
       this.restriction,
       this.price,
-      this.requires_subscription,
+      this.requiresSubscription,
       this.uploader,
       this.live);
 
@@ -106,13 +119,15 @@ class SitemapVideo {
   Map<String, dynamic> toJson() => _$SitemapVideoToJson(this);
 }
 
+/// Sitemap news object
 @JsonSerializable(explicitToJson: true)
 class SitemapNews {
-  final String publication_date;
+  @JsonKey(name: "publication_date")
+  final String publicationDate;
   final String title;
   final SitemapPublication publication;
 
-  SitemapNews(this.publication_date, this.title, this.publication);
+  SitemapNews(this.publicationDate, this.title, this.publication);
 
   factory SitemapNews.fromJson(Map<String, dynamic> json) =>
       _$SitemapNewsFromJson(json);
@@ -120,6 +135,7 @@ class SitemapNews {
   Map<String, dynamic> toJson() => _$SitemapNewsToJson(this);
 }
 
+/// Sitemap publication object
 @JsonSerializable()
 class SitemapPublication {
   final String name;

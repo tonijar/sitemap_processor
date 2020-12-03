@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'sitemap_index.g.dart';
 
-/// Sitemap index representation
+/// Sitemap index object
 @JsonSerializable(explicitToJson: true)
 class SitemapIndex {
   final SitemapIndexList sitemapindex;
@@ -15,6 +15,7 @@ class SitemapIndex {
   Map<String, dynamic> toJson() => _$SitemapIndexToJson(this);
 }
 
+/// Sitemap index list object
 @JsonSerializable(explicitToJson: true)
 class SitemapIndexList {
   final List<SitemapIndexItem> sitemap;
@@ -27,6 +28,7 @@ class SitemapIndexList {
   Map<String, dynamic> toJson() => _$SitemapIndexListToJson(this);
 }
 
+/// Sitemap index item object
 @JsonSerializable()
 class SitemapIndexItem {
   final String loc;

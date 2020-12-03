@@ -79,7 +79,7 @@ Map<String, dynamic> _$SitemapImageToJson(SitemapImage instance) =>
       'loc': instance.loc,
       'title': instance.title,
       'caption': instance.caption,
-      'geo_location': instance.geo_location,
+      'geo_location': instance.geoLocation,
       'license': instance.license,
     };
 
@@ -106,20 +106,20 @@ SitemapVideo _$SitemapVideoFromJson(Map<String, dynamic> json) {
 
 Map<String, dynamic> _$SitemapVideoToJson(SitemapVideo instance) =>
     <String, dynamic>{
-      'thumbnail_loc': instance.thumbnail_loc,
+      'thumbnail_loc': instance.thumbnailLoc,
       'title': instance.title,
       'description': instance.description,
-      'content_loc': instance.content_loc,
-      'player_loc': instance.player_loc,
+      'content_loc': instance.contentLoc,
+      'player_loc': instance.playerLoc,
       'duration': instance.duration,
-      'expiration_date': instance.expiration_date,
+      'expiration_date': instance.expirationDate,
       'rating': instance.rating,
-      'view_count': instance.view_count,
-      'publication_date': instance.publication_date,
-      'family_friendly': instance.family_friendly,
+      'view_count': instance.viewCount,
+      'publication_date': instance.publicationDate,
+      'family_friendly': instance.familyFriendly,
       'restriction': instance.restriction,
       'price': instance.price,
-      'requires_subscription': instance.requires_subscription,
+      'requires_subscription': instance.requiresSubscription,
       'uploader': instance.uploader,
       'live': instance.live,
     };
@@ -137,7 +137,7 @@ SitemapNews _$SitemapNewsFromJson(Map<String, dynamic> json) {
 
 Map<String, dynamic> _$SitemapNewsToJson(SitemapNews instance) =>
     <String, dynamic>{
-      'publication_date': instance.publication_date,
+      'publication_date': instance.publicationDate,
       'title': instance.title,
       'publication': instance.publication?.toJson(),
     };

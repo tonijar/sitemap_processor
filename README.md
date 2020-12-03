@@ -17,7 +17,7 @@ print(sitemapIndex.sitemapindex.sitemap[0].loc);
 ## Process a sitemap
 ```dart
 final SitemapProcessor processor = SitemapProcessor();
-Sitemap sitemap = tested.process(sitemapXmlString);
+Sitemap sitemap = processor.process(sitemapXmlString);
 print(sitemap.urlset.url[0].loc);
 ```
 
