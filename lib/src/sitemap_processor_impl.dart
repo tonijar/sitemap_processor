@@ -5,7 +5,6 @@ import 'sitemap_index.dart';
 
 /// A sitemap and sitemap index processor
 class SitemapProcessor {
-
   /// Process XML string and return sitemap or sitemap index object
   dynamic process(String xml) {
     final Xml2Json xml2Json = Xml2Json();

@@ -1,3 +1,8 @@
+## [1.0.1]
+
+* Added API documentation
+* Fixed video player location JSON attribute
+
 ## [1.0.0]
 
 * Added code documentation

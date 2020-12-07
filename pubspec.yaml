@@ -1,6 +1,6 @@
 name: sitemap_processor
 description: Sitemap processor Dart package, useful to parse XML with sitemaps and sitemap indexes into more manageable objects.
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/tonijar/sitemap_processor
 
 environment:
